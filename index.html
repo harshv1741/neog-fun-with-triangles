@@ -15,13 +15,25 @@
         <div class="nav-head">
           <h1>Fun With Triangles!</h1>
         </div>
-        <div class="nav-link"></div>
+        <div class="nav-link-container">
+          <h3>
+            <ul class="nav-link-list">
+              <li class="nav-link-inline">
+                <a class="nav-link active" href="/">is Triangle?</a>
+              </li>
+              <li class="nav-link-inline">
+                <a class="nav-link" href="/quiz.html">Quiz</a>
+              </li>
+            </ul>
+          </h3>
+        </div>
       </nav>
     </header>
     <!-- Header Section (END) -->
 
     <!-- isTriangle! Section (START) -->
-    <div class="is-triangle-container">
+    <div class="main-container">
+      <h2>Is your triangle really a triangle</h2>
       <label for="ang1"><h3>Enter first angle</h3></label>
       <input type="number" class="is-triangle-input" id="ang1" />
       <label for="ang2"><h3>Enter second angle</h3></label>
@@ -29,8 +41,8 @@
       <label for="ang3"><h3>Enter third angle</h3></label>
       <input type="number" class="is-triangle-input" id="ang3" />
       <br />
-      <input type="submit" id="is-triangle-submit" />
-      <input type="reset" id="is-triangle-reset" />
+      <input type="submit" id="submit" />
+      <input type="reset" id="reset" />
       <br />
       <p id="output"></p>
     </div>
@@ -51,6 +63,6 @@
         <source src="sound/reset.mp3" type="audio/mp3" />
       </audio>
     </footer>
-    <script type="text/javascript" src="/main.js"></script>
+    <script type="text/javascript" src="./javascript/main.js"></script>
   </body>
 </html>

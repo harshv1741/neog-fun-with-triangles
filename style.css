@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  font-family: "Inter", "sans-serif";
+  display: block;
+}
+
+nav {
+  color: white;
+  margin: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #852cbb;
+  background: -webkit-linear-gradient(left, #852cbb, #f884b2);
+  background: -moz-linear-gradient(left, #852cbb, #f884b2);
+  background: linear-gradient(to right, #852cbb, #f884b2);
+}
+
+/* is Triangle Section (START) */
+.is-triangle-container {
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.is-triangle-input {
+  transition-duration: 0.4s;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 4px solid #852cbb;
+  font-size: medium;
+  text-align: center;
+  outline: none;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 258px;
+  height: 30px;
+  padding: 1rem;
+}
+
+.is-triangle-input:hover {
+  border-color: #f884b2;
+}
+
+.is-triangle-input:focus {
+  border-color: #000fff;
+}
+
+#is-triangle-submit {
+  margin: 1rem;
+  padding: 13px 26px;
+  background: transparent;
+  outline: none;
+  border-radius: 0.6rem;
+  border: 3px solid;
+}
+
+#find-angle {
+  margin: 1rem;
+  padding: 13px 26px;
+  background: transparent;
+  outline: none;
+  border-radius: 0.6rem;
+  border: 3px solid;
+}
+
+#is-triangle-reset {
+  margin: 1rem;
+  padding: 13px 26px;
+  background: transparent;
+  outline: none;
+  border-radius: 0.6rem;
+  border: 3px solid;
+}
+
+#output {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+/* Is Triangle Section (END) */

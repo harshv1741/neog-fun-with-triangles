@@ -92,6 +92,7 @@ nav {
 }
 
 .triangle-input:focus {
+  transition-duration: 0.4s;
   border-color: #000fff;
 }
 
@@ -102,15 +103,29 @@ nav {
   outline: none;
   border-radius: 0.6rem;
   border: 3px solid;
+  transition-duration: 1s;
+}
+
+#submit:hover {
+  padding: 13px 26px;
+  background: black;
+  color: white;
 }
 
 #reset {
+  transition-duration: 1s;
   margin: 1rem;
   padding: 13px 26px;
   background: transparent;
   outline: none;
   border-radius: 0.6rem;
   border: 3px solid;
+}
+
+#reset:hover {
+  padding: 13px 26px;
+  background: black;
+  color: white;
 }
 
 #output {

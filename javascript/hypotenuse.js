@@ -44,11 +44,20 @@ const showMsg = (text, sound_selector) => {
   }
 };
 
+const hypotenuseCalc = (b, h) => {
+  const hypotenuse = Math.sqrt(Math.pow(b, 2) + Math.pow(h, 2)).toFixed(3);
+  console.log("Hypotenuse: " + hypotenuse);
+  return hypotenuse;
+};
+
 hypotenuse_submit.addEventListener("click", () => {
   let leg_a = Number(base.value);
   let leg_b = Number(height.value);
   if (leg_a && leg_b) {
     text = "Base: " + leg_a + "\nHeight: " + leg_b;
+    console.log(text);
+    const ans = hypotenuseCalc(leg_a, leg_b);
+    text = "Hypotenuse of Triangle " + ans;
     showMsg(text, "success");
   } else {
     showMsg("Please enter both values.", "info");

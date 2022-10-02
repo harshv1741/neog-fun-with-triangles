@@ -1,38 +1,50 @@
-// Sound List (START)
-const policeWhistleSE = document.querySelector("#policewhistle");
-const failSE = document.querySelector("#fail-sound-effect");
-const successSE = document.querySelector("#success-sound-effect");
-const resetSE = document.querySelector("#reset-sound-effect");
-// Sound List (END)
-
 // Is Triangle Section (START)
 const ang1 = document.querySelector("#ang1");
 const ang2 = document.querySelector("#ang2");
 const ang3 = document.querySelector("#ang3");
-const is_triangle_submit = document.querySelector("#is-triangle-submit");
-const is_triangle_reset = document.querySelector("#is-triangle-reset");
+const is_triangle_submit = document.querySelector("#submit");
+const is_triangle_reset = document.querySelector("#reset");
 const msg = document.querySelector("#output");
 
-function showMsg(text, color, sound_selector) {
-  msg.style.display = "block";
-  msg.style.color = color;
-  msg.innerText = text;
+const showMsg = (text, color, sound_selector) => {
+  const policeWhistleSE = document.querySelector("#policewhistle");
+  const failSE = document.querySelector("#fail-sound-effect");
+  const successSE = document.querySelector("#success-sound-effect");
+  const resetSE = document.querySelector("#reset-sound-effect");
 
   switch (sound_selector) {
     case "success":
       successSE.play();
+      msg.style.display = "inline";
+      msg.style.color = color;
+      msg.innerText = text;
       break;
+
     case "fail":
       failSE.play();
+      msg.style.display = "inline";
+      msg.style.color = color;
+      msg.innerText = text;
       break;
+
     case "info":
       policeWhistleSE.play();
+      msg.style.display = "inline";
+      msg.style.color = color;
+      msg.innerText = text;
       break;
+
+    case "reset":
+      resetSE.play();
+      msg.style.display = "none";
+      ang1.value = ang2.value = ang3.value = "";
+      break;
+
     default:
       console.log("no sound");
       break;
   }
-}
+};
 
 is_triangle_submit.addEventListener("click", () => {
   angle1 = Number(ang1.value);
@@ -70,10 +82,6 @@ is_triangle_submit.addEventListener("click", () => {
 });
 
 is_triangle_reset.addEventListener("click", () => {
-  msg.innerText = "";
-  ang1.value = "";
-  ang2.value = "";
-  ang3.value = "";
-  resetSE.play();
+  showMsg(0, 0, "reset");
 });
 // Is Triangle Section (END)

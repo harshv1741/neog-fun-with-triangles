@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- Header Section (START) -->
+    <header>
+      <nav>
+        <div class="nav-head">
+          <h1>Fun With Triangles!</h1>
+        </div>
+        <div class="nav-link-container">
+          <h3>
+            <ul class="nav-link-list">
+              <li class="nav-link-inline">
+                <a class="nav-link" href="/">is Triangle?</a>
+              </li>
+              <li class="nav-link-inline">
+                <a class="nav-link active" href="/quiz.html">Quiz</a>
+              </li>
+              <li class="nav-link-inline">
+                <a class="nav-link" href="/area-of-triangle.html"
+                  >Area of Triangle</a
+                >
+              </li>
+              <li class="nav-link-inline">
+                <a class="nav-link" href="/hypotenuse.html"
+                  >Hypotenuse of Triangle</a
+                >
+              </li>
+            </ul>
+          </h3>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section (END) -->
+
+    <!-- Quiz! Section (START) -->
+    <div class="main-container">
+      <div class="heading">
+        <h2>Here is the quiz for triangle</h2>
+        <h3>Note: Solve all the quiz then press submit button</h3>
+      </div>
+      <form class="quizForm">
+        <!-- q1 -->
+        <div class="question-container">
+          <h3>
+            <p>What is a Triangle?</p>
+            <label
+              ><input
+                type="radio"
+                name="question1"
+                value="A geometric figure"
+              />A geometric figure</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question1"
+                value="An form of architecture"
+              />An form of architecture</label
+            >
+            <label
+              ><input type="radio" name="question1" value="A piece of art" />A
+              piece of art</label
+            >
+          </h3>
+        </div>
+
+        <!-- q2 -->
+        <div class="question-container">
+          <h3>
+            <p>What is the sum of angle of a Triangle?</p>
+            <label
+              ><input type="radio" name="question2" value="120°" />120°</label
+            >
+            <label
+              ><input type="radio" name="question2" value="240°" />240°</label
+            >
+            <label
+              ><input type="radio" name="question2" value="180°" />180°</label
+            >
+          </h3>
+        </div>
+
+        <!-- q3 -->
+        <div class="question-container">
+          <h3>
+            <p>How many vertices does a triangle have?</p>
+            <label><input type="radio" name="question3" value="3" />3</label>
+            <label><input type="radio" name="question3" value="2" />2</label>
+            <label><input type="radio" name="question3" value="4" />4</label>
+          </h3>
+        </div>
+
+        <!-- q4 -->
+        <div class="question-container">
+          <h3>
+            <p>How many edges does a triangle have?</p>
+            <label><input type="radio" name="question4" value="3" />3</label>
+            <label><input type="radio" name="question4" value="2" />2</label>
+            <label><input type="radio" name="question4" value="4" />4</label>
+          </h3>
+        </div>
+
+        <!-- q5 -->
+        <div class="question-container">
+          <h3>
+            <p>What is the name of a triangle with equal vertices?</p>
+            <label
+              ><input
+                type="radio"
+                name="question5"
+                value="Equilateral"
+              />Equilateral</label
+            >
+            <label
+              ><input type="radio" name="question5" value="Right angled" />Right
+              Angled</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question5"
+                value="Isosceles"
+              />Isosceles</label
+            >
+          </h3>
+        </div>
+
+        <!-- q6 -->
+        <div class="question-container">
+          <h3>
+            <p>What is the longest side of a triangle called?</p>
+            <label
+              ><input type="radio" name="question6" value="Hyppo" />Hyppo</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question6"
+                value="Hypotenuse"
+              />Hypotenuse</label
+            >
+          </h3>
+        </div>
+
+        <!-- q7 -->
+        <div class="question-container">
+          <h3>
+            <p>What is the name of the triangle with no equal sides?</p>
+            <label
+              ><input
+                type="radio"
+                name="question7"
+                value="Scalene"
+              />Scalene</label
+            >
+            <label
+              ><input type="radio" name="question7" value="Galen" />Galen</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question7"
+                value="Caithlyn"
+              />Caithlyn</label
+            >
+          </h3>
+        </div>
+        <!-- q8 -->
+        <div class="question-container">
+          <h3>
+            <p>
+              What is the name of a triangle with two equal vertices and one
+              different vertice?
+            </p>
+            <label
+              ><input type="radio" name="question8" value="Plato" />Plato</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question8"
+                value="Isosceles"
+              />Isosceles</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question8"
+                value="Aristotle"
+              />Aristotle</label
+            >
+          </h3>
+        </div>
+      </form>
+      <button id="submit">Submit</button>
+      <br />
+      <p id="output"></p>
+    </div>
+    <!-- Quiz! Section (END) -->
+
+    <footer>
+      <!-- Audio Effect Section -->
+      <audio id="infosound">
+        <source src="sound/vintage-info-message.mp3" type="audio/wav" />
+      </audio>
+    </footer>
+    <script type="text/javascript" src="./javascript/quiz.js"></script>
+  </body>
+</html>

@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Fun With Triangles</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Area of Triangle</title>
   </head>
-
   <body>
     <!-- Header Section (START) -->
     <header>
@@ -41,26 +40,26 @@
     </header>
     <!-- Header Section (END) -->
 
-    <!-- isTriangle! Section (START) -->
+    <!-- Area of Triangle Section (START) -->
     <div class="main-container">
-      <h2>Is your triangle really a triangle</h2>
-      <label for="ang1"><h3>Enter first angle</h3></label>
-      <input type="number" class="is-triangle-input" id="ang1" />
-      <label for="ang2"><h3>Enter second angle</h3></label>
-      <input type="number" class="is-triangle-input" id="ang2" />
-      <label for="ang3"><h3>Enter third angle</h3></label>
-      <input type="number" class="is-triangle-input" id="ang3" />
+      <h2>Area of Triangle</h2>
+      <label for="ang1"><h3>Enter first side</h3></label>
+      <input type="number" class="is-triangle-input" id="s1" />
+      <label for="ang2"><h3>Enter second side</h3></label>
+      <input type="number" class="is-triangle-input" id="s2" />
+      <label for="ang3"><h3>Enter third side</h3></label>
+      <input type="number" class="is-triangle-input" id="s3" />
       <br />
       <input type="submit" id="submit" />
       <input type="reset" id="reset" />
       <br />
       <p id="output"></p>
     </div>
-    <!-- isTriangle! Section (END) -->
+    <!-- Area of Triangle Section (END) -->
 
     <footer>
       <!-- Audio Effect Section -->
-      <audio id="policewhistle">
+      <audio id="infoSE">
         <source src="sound/vintage-info-message.mp3" type="audio/wav" />
       </audio>
       <audio id="fail-sound-effect">
@@ -73,6 +72,6 @@
         <source src="sound/reset.mp3" type="audio/mp3" />
       </audio>
     </footer>
-    <script type="text/javascript" src="./javascript/main.js"></script>
+    <script type="text/javascript" src="./javascript/aot.js"></script>
   </body>
 </html>

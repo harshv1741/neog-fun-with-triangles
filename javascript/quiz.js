@@ -1,6 +1,12 @@
+const showMsg = (score) => {
+  const infoSE = document.querySelector("#infosound");
+  msg.style.display = "inline";
+  msg.innerText = "The Score is " + score;
+  infoSE.play();
+};
 const submit = document.querySelector("#submit");
-const quizform = document.querySelector(".quizForm");
-const msg = document.querySelector(".output");
+const quizForm = document.querySelector(".quizForm");
+const msg = document.querySelector("#output");
 
 const quizAns = [
   "A geometric figure",
@@ -14,14 +20,14 @@ const quizAns = [
 ];
 
 submit.addEventListener("click", () => {
-  const formResult = new FormData(quizform);
+  const formResult = new FormData(quizForm);
   let score = 0,
     i = 0;
   for (let value of formResult.values()) {
     if (value === quizAns[i]) {
-      score = score + 1;
+      score++;
     }
-    i = i + 1;
+    i++;
   }
-  msg.innerText = "Score: " + score;
+  showMsg(score);
 });

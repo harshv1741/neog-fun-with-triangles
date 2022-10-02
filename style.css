@@ -72,7 +72,7 @@ nav {
   text-align: center;
 }
 
-.is-triangle-input {
+.triangle-input {
   transition-duration: 0.4s;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -87,11 +87,11 @@ nav {
   padding: 1rem;
 }
 
-.is-triangle-input:hover {
+.triangle-input:hover {
   border-color: #f884b2;
 }
 
-.is-triangle-input:focus {
+.triangle-input:focus {
   border-color: #000fff;
 }
 
@@ -114,12 +114,13 @@ nav {
 }
 
 #output {
+  margin: auto;
   font-size: 30px;
   font-family: "Inter", sans-serif;
 }
 
 footer {
-  padding-top: 2rem;
+  padding-top: 8rem;
 }
 
 /* Is Triangle Section (END) */

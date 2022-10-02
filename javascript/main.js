@@ -7,7 +7,7 @@ const is_triangle_reset = document.querySelector("#reset");
 const msg = document.querySelector("#output");
 
 const showMsg = (text, color, sound_selector) => {
-  const policeWhistleSE = document.querySelector("#policewhistle");
+  const infoSE = document.querySelector("#infoSE");
   const failSE = document.querySelector("#fail-sound-effect");
   const successSE = document.querySelector("#success-sound-effect");
   const resetSE = document.querySelector("#reset-sound-effect");
@@ -28,7 +28,7 @@ const showMsg = (text, color, sound_selector) => {
       break;
 
     case "info":
-      policeWhistleSE.play();
+      infoSE.play();
       msg.style.display = "inline";
       msg.style.color = color;
       msg.innerText = text;

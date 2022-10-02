@@ -72,7 +72,7 @@ nav {
   text-align: center;
 }
 
-.is-triangle-input {
+.triangle-input {
   transition-duration: 0.4s;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -87,11 +87,12 @@ nav {
   padding: 1rem;
 }
 
-.is-triangle-input:hover {
+.triangle-input:hover {
   border-color: #f884b2;
 }
 
-.is-triangle-input:focus {
+.triangle-input:focus {
+  transition-duration: 0.4s;
   border-color: #000fff;
 }
 
@@ -102,9 +103,17 @@ nav {
   outline: none;
   border-radius: 0.6rem;
   border: 3px solid;
+  transition-duration: 1s;
+}
+
+#submit:hover {
+  padding: 13px 26px;
+  background: black;
+  color: white;
 }
 
 #reset {
+  transition-duration: 1s;
   margin: 1rem;
   padding: 13px 26px;
   background: transparent;
@@ -113,13 +122,20 @@ nav {
   border: 3px solid;
 }
 
+#reset:hover {
+  padding: 13px 26px;
+  background: black;
+  color: white;
+}
+
 #output {
+  margin: auto;
   font-size: 30px;
   font-family: "Inter", sans-serif;
 }
 
 footer {
-  padding-top: 2rem;
+  padding-top: 8rem;
 }
 
 /* Is Triangle Section (END) */
